@@ -1,0 +1,14 @@
+1-2
+For a small amount of pushes, the array is about 10x faster than the linked list.
+For a small amount of pops, the array approach was faster, but not by quite as much.
+3-4
+For lots of pushing, the linked approach was faster.
+However, on the pops, the array approach was faster, until we get to huuuge pops. The linked approach was faster then.
+5
+It was interesting that popping was always faster for linked lists, while adding is always cheaper for arrays.
+It makes sense because all we're doing for adding is sticking a value in a slot, whereas to make a new Node it takes
+up a lot of memory (and more likely than not, time).
+6
+Well, array takes up less memory. By far. However, Linked is faster because you don't have to deal with the whole list
+when you're just pushing or popping. Every once in a while with the array, you do, and it takes ages. So the tradeoff,
+as per the norm, is time vs Memory (linking takes more memory because it's creating objects).

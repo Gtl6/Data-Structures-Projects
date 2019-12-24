@@ -1,0 +1,15 @@
+Insert Sort
+Sort Time: 855,893
+Moves: 18259
+
+Selection Sort
+Sort Time: 6,778,454
+Moves: 501500
+
+Merge Sort
+Sort Time: 5,181,014
+Moves: 246724
+
+While exactly quantifying moves is a weird idea, it makes sense that Insert Sort would be faster than Selection Sort.
+Merge sort should be better for much, much larger data, but for relatively small data sets (only 1000 elements) it
+could make sense that it's less efficient to make new arrays.

@@ -1,0 +1,13 @@
+1) Usually, the creator of the class knows the data structure intimately, so he can implement a better way to create
+unique values for the class. A centrally created function you're getting less code per class, but in the long run you're
+giving up precision, and quite possibly strength of your hashing function.
+
+2) If there was a point after which you knew your object would be full of data (not going to cause a null pointer), you
+certainly could do so. Let's say you were running a scientific experiment, and you create a few objects, load them up
+with experimental data, and then you wanted to analyze the data (while the program was still executing). You could
+certainly create hashes for these things without ever saving them to file for later analysis.
+
+3) Of course you can. Will it be secure (non-reversible)? No, of course not. The whole possibilities range could be
+mapped in likely under a second. Would it be worth the memory a hash table takes up? I dunno, it depends on whether you
+want it to run really fast or really, really fast. Either way, the tradeoff won't have a huge effect on time or memory,
+so it won't make too much of a difference.
